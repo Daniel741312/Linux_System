@@ -8,7 +8,9 @@ int main(int argc,char* argv[]){
 	int fd1=0;
 	int fd2=0;
 
+	/*Read a file by trunc,if it doesn't exist create it with the mode 0644*/
 	fd1=open("./dirt.txt",O_RDONLY|O_CREAT|O_TRUNC,0644);
+	/*Read a file which doesn't exist*/
 	fd2=open("./dirt2.txt",O_RDONLY);
 
 	printf("fd1=%d\n",fd1);
