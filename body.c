@@ -8,6 +8,7 @@
 #include<sys/wait.h>
 #include<sys/mman.h>
 #include<dirent.h>
+#include<signal.h>
 
 void perr_exit(const char* str){
 	perror(str);
